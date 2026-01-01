@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RCB🏏Fan Website🏏</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">RCB</h1>
+        <ul class="menu">
+            <li><a href="#home">🏚️Home</a></li>
+            <li><a href="#players">🤾Players</a></li>
+            <li><a href="#schedule">🗓️Schedule</a></li>
+            <li><a href="#fan">Fan Zone</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Royal Challengers Bangalore</h2>
+        <p>#PlayBold | Official Fan Website</p>
+        <button onclick="vote()">Vote for RCB</button>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h2><strong>About RCB🏏</strong></h2>
+        <p>
+            Royal Challengers Bangalore is one of the most popular teams in the Indian Premier League.
+            Known for its passionate fans, star players, and bold performances, RCB represents energy,
+            confidence, and entertainment in cricket.
+        </p>
+        <p> This website was created as a fan project to practice web development skills</p>
+    </section>
+
+    <!-- Players -->
+    <section id="players" class="players">
+        <h2>Star Players</h2>
+        <div class="player-cards">
+            <div class="card">
+                <h3>Virat Kohli 18</h3>
+                <p>Batsman</p>
+                <p>An iconic batter,RCB's leading run scorer and a global superstar,<br>crucial for anchoring the innings. </p>
+                <p>India</p>
+                <img src="virat.jpg.webp" alt="Virat Kohli">
+            </div>
+            <div class="card">
+                <h3>Faf du Plessis</h3>
+                <p>Batsman known for his stylish,aggressive player</p>
+                <p>South Africa</p>
+                <img src="faf.jpg.jpg" alt="Faf du Plessis">
+            </div>
+            <div class="card">
+                <h3>Tim David</h3>
+                <p>A powerful middle-order finisher<br>for his six hitting ability</p>
+                <p>Australia</p>
+                <img src="tim.jpg.webp" alt="Tim David">
+            </div>
+            <div class="card">
+                <h3>Phil Salt</h3>
+                <p>An explosive wicketkeeper-batter,bringing aggression at the top of the innings</p>
+                <p>England</p>
+                <img src="phil.jpg.webp" alt="Phil Salt">
+            </div>
+            <div class="card">
+                <h3>Krunal Pandya</h3>
+                <p>An experienced all-rounder with a strong batting and bowling record</p>
+                <p>India</p>
+                <img src="krunal.jpg.jpg" alt="Krunal Pandya">
+            </div>
+            <div class="card">
+                <h3>Josh Hazlewood</h3>
+                <p> A world class fast Bowler,effective with the ball and in the field</p>
+                <p>Australia</p>
+                <img src="josh.jpg.webp" alt="Josh Hazlewood">
+            </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="schedule">
+        <h2>Match Schedule</h2>
+        <table>
+            <tr>
+                <th>Match</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>RCB vs CSK</td>
+                <td>March 22</td>
+            </tr>
+            <tr>
+                <td>RCB vs MI</td>
+                <td>March 27</td>
+            </tr>
+            <tr>
+                <td>RCB vs SRH</td>
+                <td>April 2</td>
+            </tr>
+            <tr>
+                <td>RCB vs pbks</td>
+                <td>May 3</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Fan Zone -->
+    <section id="fan" class="fan">
+        <h2>Fan Poll</h2>
+        <p>Who is your favorite RCB player?</p>
+        <button onclick="poll('Virat Kohli')">Virat Kohli</button>
+        <button onclick="poll('Faf du Plessis')">Faf du Plessis</button>
+        <button onclick="poll('Tim David')">Tim David</button>
+        <button onclick="poll('Phil Salt')">Phil Salt</button>
+        <button onclick="poll('Krunal Pandya')">Krunal Pandya</button>
+        <button onclick="poll('Josh Hazlewood')">Josh Hazlewood</button>
+        <p id="result" style="margin-top:15px; font-weight:600;"></p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 RCB Fan Website | Created by Manaswini</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
